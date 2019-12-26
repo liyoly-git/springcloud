@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: hello-consumer-feign
+
+server:
+  port: 8031
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka

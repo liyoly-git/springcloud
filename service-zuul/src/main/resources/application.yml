@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: service-zuul
+
+server:
+  port: 8061
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka
+
+zuul:
+  routes:
+    hello-service:
+      path: /hello-service/**
+      serviceId: hello-service
